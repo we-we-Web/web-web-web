@@ -1,5 +1,6 @@
 "use client";
 
+import tabletStyles from './TitleNameForTablet.module.css';
 import styles from './TitleName.module.css';
 import Button from './Button';
 import Image from 'next/image';
@@ -7,7 +8,7 @@ import myImage from '../IMG_8760.jpg';
 import React from 'react';
 
 export default function TitleName() {
-    
+
     const title = "Web Project";
 
     const handleMouseEnter = (event: React.MouseEvent<HTMLSpanElement>) => {
@@ -62,5 +63,6 @@ export default function TitleName() {
             <Image className={styles.pic} src={myImage} alt="My Image"/>
         </div>
     );
+
 }
 
