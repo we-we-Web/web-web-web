@@ -3,14 +3,14 @@ import myImage from '../purple potato.png'
 import Link from 'next/link'
 import Image from 'next/image';
 import Technology from './Technology';
-import React, {useState} from 'react';
+
 export default function ProjectReview() {
 
     return (
         <div className={styles.purplePotatoContainer}>
-            <Link href="">
+            <Link href="/project">
                 <div className={styles.purplePotatoView}>
-                    <Image className = {styles.pic} src = {myImage} alt="My Image"/>
+                    <Image className={styles.pic} src={myImage} alt="My Image"/>
                     <div className={styles.title}>
                         <h1>我直屬於你</h1>
                     </div>

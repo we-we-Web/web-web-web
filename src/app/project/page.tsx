@@ -40,8 +40,8 @@ export default function Project() {
                 <div className={styles['tech-stack-part']}>
                     <h3>後端 Backend</h3>
                     <ul>
-                        {backendSkills.map((skill) => (
-                            <li>{skill}</li>
+                        {backendSkills.map((skill, index) => (
+                            <li key={index}>{skill}</li>
                         ))}
                     </ul>
                 </div>
