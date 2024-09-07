@@ -44,7 +44,7 @@
     }
     
     .selection {
-        margin-left: 0px;
+        margin-left: 100px;
     }
     
     .selection a {
@@ -59,21 +59,21 @@
     }
     
     .bar p {
-        font-size: 15px;
+        font-size: 18px;
         margin-left: 5px;
     }
     
     .selection {
-        margin-left: 0px;
+        margin-left: 400px;
     }
     
     .selection a {
         margin-left: 8px;
-        font-size: 13px;
+        font-size: 15px;
     }
 }
 
-@media(max-width: 1400px) {
+@media(min-width: 1000px) and (max-width: 1400px) {
     .bar {
         height: 60px;
     }

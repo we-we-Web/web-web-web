@@ -31,7 +31,7 @@ export default function TitleName() {
                     <header className={styles.jumpTitle}>
                         {Array.from(title).map((letter, index) => (
                             <React.Fragment key={index}>
-                                <span
+                                <p
                                     ref={(el) => {
                                         letterRefs.current[index] = el;
                                     }}
@@ -40,7 +40,7 @@ export default function TitleName() {
                                     onMouseEnter={() => handleMouseEnter(index)}
                                 >
                                     {letter === ' ' ? '\u00A0' : letter}
-                                </span>
+                                </p>
                             </React.Fragment>
                         ))}
                     </header>
