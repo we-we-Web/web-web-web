@@ -1,0 +1,126 @@
+.team a {
+    color: #000;
+    text-decoration: none;
+}
+
+.team a:link {
+    color: #000;
+    text-decoration: none;
+}
+
+.team a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+.team a:hover{
+    opacity: 50%;
+}
+
+.introTitle{
+    font-size: 30px;
+    text-align: center;
+    color: #d3a373;
+    margin: 20px 0 0 0;
+}
+
+.introTitle::after{
+    content: '';
+    width: 75%;
+    height: 1px;
+    display: block;
+    margin: auto;
+    padding: 1px;
+    border-bottom: 2px solid #888;
+}
+
+.team{
+    display: flex;
+    width: 1400px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    padding: 30px;
+    justify-content: space-around;
+}
+
+.card{
+    --circle-radius: 60px;
+
+    width: 320px;
+    margin: 15px;
+    min-height: 340px;
+    background-color: #fff;
+    border-radius: var(--circle-radius);
+    overflow: hidden;
+}
+
+.cardImg{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    vertical-align: middle;
+    filter: blur(24px);
+    transition: filter 0.4s;
+}
+
+.card:hover .cardImg{
+    filter: blur(0);
+    transition-delay: 0s;
+}
+
+.cardImg::before, .cardImg::after{
+    content: '';
+    position: absolute;
+}
+
+.cardImg::before{
+    bottom: calc(var(--circle-radius) * -1);
+    width: 120%;
+    height: calc(var(--circle-radius) * 2);
+    border-radius: var(--circle-radius) var(--circle-radius) 0 0;
+    background-color: #fff;
+}
+
+.cardImg::after{
+    right: 0;
+    bottom: var(--circle-radius);
+    width: calc(var(--circle-radius) * 2);
+    height: calc(var(--circle-radius) * 2);
+    border-radius: 50%;
+    background: #fff;
+
+    background: transparent;
+    box-shadow: var(--circle-radius) var(--circle-radius) 0 0 #fff;
+}
+
+.cardContent{
+    position: relative;
+    bottom: calc(var(--circle-radius) / 2);
+    margin-inline: 40px; 
+
+    display: grid;
+    grid-template-rows: min-content 0fr;
+    transition: grid-template-rows 0.4s;
+}
+
+.card:hover .cardContent{
+    transition-delay: 0s;
+}
+
+.cardContentText{
+    overflow: hidden;
+
+    opacity: 0;
+    transition: margin 0s 0.4s, opacity 0.4s;
+}
+
+.card:hover .cardContentText{
+    margin-top: 16px;
+    opacity: 1;
+    transition-delay: 0.4s 0.4s;
+}
+
+.cardContentSubheading{
+    font-size: 14px;
+}
