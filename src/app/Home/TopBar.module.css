@@ -1,30 +1,23 @@
 .bar {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     flex-direction: row;
     background-color: #D3A373;
     color: #644D35;
-    height: 68px;
     align-items: center;
     justify-content: space-between;
-}
-
-.bar p {
-    font-size: 24px;
-    margin-left: 97px;
+    user-select: none;
 }
 
 .selection {
-    margin-left: 585px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.selection a {
-    margin-left: 65px;
-    font-size: 24px;
+.GitHub{
+    margin-right: 10px;
 }
 
 .selection p {
@@ -40,9 +33,84 @@
     justify-content: flex-end;
 }
 
-.GitHub{
-    margin-right: 10px;
+@media(max-width: 577px) {
+    .bar {
+        height: 40px;
+    }
+    
+    .bar p {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+    
+    .selection {
+        margin-left: 100px;
+    }
+    
+    .selection a {
+        margin-left: 5px;
+        font-size: 12px;
+    }
 }
 
+@media(min-width: 578px) and (max-width: 1000px) {
+    .bar {
+        height: 50px;
+    }
+    
+    .bar p {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+    
+    .selection {
+        margin-left: 400px;
+    }
+    
+    .selection a {
+        margin-left: 8px;
+        font-size: 15px;
+    }
+}
+
+@media(min-width: 1000px) and (max-width: 1400px) {
+    .bar {
+        height: 60px;
+    }
+
+    .bar p {
+        font-size: 20px;
+        margin-left: 50px;
+    }
+
+    .selection {
+        margin-left: 400px;
+    }
+
+    .selection a {
+        margin-left: 40px;
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 1400px) {
+    .bar {
+        height: 68px;
+    }
+    
+    .bar p {
+        font-size: 24px;
+        margin-left: 97px;
+    }
+    
+    .selection {
+        margin-left: 585px;
+    }
+    
+    .selection a {
+        margin-left: 65px;
+        font-size: 24px;
+    }
+}
 
 
