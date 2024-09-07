@@ -3,7 +3,7 @@
 import styles from './TitleName.module.css';
 import Button from './Button';
 import Image from 'next/image';
-import myImage from '../logo.jpg';
+import myImage from '../logo.png';
 import React, { useRef ,useState,useEffect} from 'react';
 
 export default function TitleName() {
