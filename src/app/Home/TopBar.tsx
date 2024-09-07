@@ -1,7 +1,6 @@
 import styles from './TopBar.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { width } from '@fortawesome/free-brands-svg-icons/fa42Group';
 
 export default function TopBar() {
     return (
