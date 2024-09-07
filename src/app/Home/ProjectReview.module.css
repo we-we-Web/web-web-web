@@ -1,0 +1,28 @@
+.purplePotatoContainer{
+    width: 800px;
+    height: 1000px;
+    margin-left: 300px;
+}
+
+.purplePotatoView{
+    width: 500px;
+    height: 1000px;
+}
+
+.pic{
+    width: 500px;
+    height: 200px;
+    border-radius: 12px;
+}
+
+.title{
+    margin-top: 5px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.description{
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+}
