@@ -1,0 +1,12 @@
+.tag-view {
+    display: inline-block;
+    padding: 0.6vh 1.2vh;
+    margin: 1.5vh 0.6vh;
+    font-size: 0.8rem;
+    width: auto;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: gray;
+    border-radius: 8px;
+    opacity: 0.85;
+}
