@@ -1,0 +1,28 @@
+.potato-view {
+    color: var(--font-color);
+}
+
+.potato-title {
+    margin: 2vh;
+}
+
+.potato-title header {
+    display: flex;
+    justify-content: center;
+    font-size: 2.7rem;
+    font-weight: 600;
+    margin: 1.5vh;
+}
+
+.potato-title h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 1.5vh;
+}
+
+.potato-skills {
+    display: flex;
+    justify-content: center;
+}
