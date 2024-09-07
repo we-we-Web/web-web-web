@@ -1,12 +1,13 @@
-.potato-view {
+.view {
+    margin: 5vh;
     color: var(--font-color);
 }
 
-.potato-title {
+.title {
     margin: 2vh;
 }
 
-.potato-title header {
+.title header {
     display: flex;
     justify-content: center;
     font-size: 2.7rem;
@@ -14,7 +15,7 @@
     margin: 1.5vh;
 }
 
-.potato-title h1 {
+.title h1 {
     display: flex;
     justify-content: center;
     font-size: 1.3rem;
@@ -22,7 +23,41 @@
     margin: 1.5vh;
 }
 
-.potato-skills {
+.title-skills {
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
+}
+
+.tech-stack {
+    margin: 10vh 20vh;
+}
+
+.tech-stack h2 {
+    font-size: 1.5rem;
+}
+
+.tech-stack-part {
+    margin: 1vh;
+    line-height: 3vh;
+}
+
+.tech-stack-part h3 {
+    font-size: 1.2rem;
+    padding-block: 1vh;
+}
+
+@media(max-width: 600px) {
+    .view {
+        margin: 5vh 0;
+    }
+    .tech-stack {
+        margin: 5vh;
+    }
+}
+
+@media(max-width: 1000px) {
+    .tech-stack {
+        margin: 5vh 10vh;
+    }
 }
