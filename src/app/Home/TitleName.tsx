@@ -1,26 +1,27 @@
 "use client";
 
-import tabletStyles from './TitleNameForTablet.module.css';
 import styles from './TitleName.module.css';
 import Button from './Button';
 import Image from 'next/image';
-import myImage from '../IMG_8760.jpg';
-import React from 'react';
+import myImage from '../logo.png';
+import React, { useRef } from 'react';
 
 export default function TitleName() {
 
-    const title = "Web Project";
+    const title = `Web Project`;
 
-    const handleMouseEnter = (event: React.MouseEvent<HTMLSpanElement>) => {
-        const element = event.currentTarget;
+    const letterRefs = useRef<Array<HTMLSpanElement | null>>([]);
 
-        element.classList.add(styles.isActive);
+    const handleMouseEnter = (index: number) => {
+        const element = letterRefs.current[index];
 
-        element.addEventListener('animationend', () => {
+        if (element) {
+            element.classList.add(styles.isActive);
 
-            element.classList.remove(styles.isActive);
-
-        }, { once: true });
+            element.addEventListener('animationend', () => {
+                element.classList.remove(styles.isActive);
+            }, { once: true });
+        }
     };
 
     return (
@@ -28,41 +29,29 @@ export default function TitleName() {
             <div>
                 <div className={styles.jumpLetterContainer}>
                     <header className={styles.jumpTitle}>
-                        {title.split('').map((letter, index) => (
+                        {Array.from(title).map((letter, index) => (
                             <React.Fragment key={index}>
-                                {letter === 'P' ? (
-                                    <>
-                                        <span className={styles.space}></span> {/* 空格 */}
-                                        <span 
-                                            className={styles.jumpTitleAlphabet}
-                                            id="special-letter"
-                                            onMouseEnter={handleMouseEnter}
-                                        >
-                                            {letter}
-                                        </span>
-                                    </>
-                                ) : (
-                                    <span
-                                        className={styles.jumpTitleAlphabet}
-                                        id={letter === 'P' ? 'special-letter' : undefined}
-                                        onMouseEnter={handleMouseEnter}
-                                    >
-                                        {letter}
-                                    </span>
-                                )}
+                                <p
+                                    ref={(el) => {
+                                        letterRefs.current[index] = el;
+                                    }}
+                                    className={styles.jumpTitleAlphabet}
+                                    id={'special-letter'}
+                                    onMouseEnter={() => handleMouseEnter(index)}
+                                >
+                                    {letter === ' ' ? '\u00A0' : letter}
+                                </p>
                             </React.Fragment>
                         ))}
                     </header>
                 </div>
 
                 <p className={styles.subtitle}>
-                    This team website of 2024 web programming in NTOU which led by Ateto
+                    This team website of 2024 web programming in NTOU <wbr />which led by Ateto
                 </p>
-                <Button/>
+                <Button />
             </div>
-            <Image className={styles.pic} src={myImage} alt="My Image"/>
+            <Image className={styles.pic} src={myImage} alt="My Image" />
         </div>
     );
-
 }
-
