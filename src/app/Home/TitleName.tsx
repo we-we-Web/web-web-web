@@ -9,7 +9,7 @@ import React from 'react';
 
 export default function TitleName() {
 
-    const title = "Web Project";
+    const title = `Web Project`;
 
     const handleMouseEnter = (event: React.MouseEvent<HTMLSpanElement>) => {
         const element = event.currentTarget;
@@ -30,9 +30,9 @@ export default function TitleName() {
                     <header className={styles.jumpTitle}>
                         {title.split('').map((letter, index) => (
                             <React.Fragment key={index}>
-                                {letter === 'P' ? (
+                                {/* {letter === 'P' ? (
                                     <>
-                                        <span className={styles.space}></span> {/* 空格 */}
+                                        <span className={styles.space} />
                                         <span 
                                             className={styles.jumpTitleAlphabet}
                                             id="special-letter"
@@ -41,22 +41,22 @@ export default function TitleName() {
                                             {letter}
                                         </span>
                                     </>
-                                ) : (
+                                ) : ( */}
                                     <span
                                         className={styles.jumpTitleAlphabet}
-                                        id={letter === 'P' ? 'special-letter' : undefined}
+                                        id={'special-letter'}
                                         onMouseEnter={handleMouseEnter}
                                     >
                                         {letter}
                                     </span>
-                                )}
+                                {/* )} */}
                             </React.Fragment>
                         ))}
                     </header>
                 </div>
 
                 <p className={styles.subtitle}>
-                    This team website of 2024 web programming in NTOU which led by Ateto
+                    This team website of 2024 web programming in NTOU <wbr/>which led by Ateto
                 </p>
                 <Button/>
             </div>
