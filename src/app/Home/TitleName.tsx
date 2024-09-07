@@ -4,13 +4,15 @@ import styles from './TitleName.module.css';
 import Button from './Button';
 import Image from 'next/image';
 import myImage from '../logo.jpg';
-import React, { useRef } from 'react';
+import React, { useRef ,useState,useEffect} from 'react';
 
 export default function TitleName() {
 
     const title = `Web Project`;
 
     const letterRefs = useRef<Array<HTMLSpanElement | null>>([]);
+
+    const [screenWidth, setScreenWidth] = useState(0);
 
     const handleMouseEnter = (index: number) => {
         const element = letterRefs.current[index];
@@ -24,6 +26,22 @@ export default function TitleName() {
         }
     };
 
+    useEffect(() =>{
+        if (typeof window !== undefined){
+            const handleResize = () => {
+                setScreenWidth(window.innerWidth);
+            };
+            
+            window.addEventListener('resize',handleResize);
+            
+            handleResize();
+
+            return () =>{
+                window.removeEventListener('resize',handleResize);
+            };
+        }        
+    },[]);
+    
     return (
         <div className={styles.title}>
             <div>
@@ -39,7 +57,7 @@ export default function TitleName() {
                                     id={'special-letter'}
                                     onMouseEnter={() => handleMouseEnter(index)}
                                 >
-                                    {letter === ' ' ? '\u00A0' : letter}
+                                    {letter === ' ' ? screenWidth < 600 ? <br/> : '\u00A0' : letter}
                                 </span>
                             </React.Fragment>
                         ))}
