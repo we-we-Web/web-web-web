@@ -2,7 +2,7 @@ import styles from './ProjectReview.module.css';
 import myImage from '/public/assets/purple potato.png'
 import Link from 'next/link'
 import Image from 'next/image';
-import Technology from '../technology/Technology';
+import Technology from './technology/Technology';
 
 export default function ProjectReview() {
 
