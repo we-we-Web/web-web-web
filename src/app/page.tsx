@@ -1,11 +1,15 @@
-import Home from './Home/Home'
-import TitleName from './Home/TitleName';
+import Home from './home/home/Home'
+import TitleName from './home/titleName/TitleName';
+import MemberCard from "./home/memberCard/MemberCard";
+import ProjectReview from './home/projectReview/ProjectReview';
 
 export default function page() {
   return (
     <>
-      <Home/>
-      <TitleName/>
+      <Home />
+      <TitleName />
+      <MemberCard />
+      <ProjectReview />
     </>
   );
 }

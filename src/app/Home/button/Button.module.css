@@ -7,8 +7,8 @@
 
 .button1 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #CDD5AE; /* 初始背景顏色 */
-    color: #806345;
+    background-color: #CDD5AE;
+    color: var(--font-color);
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -18,7 +18,7 @@
 .button2 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #E9EDCA;
-    color: #806345;
+    color: var(--font-color);
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -71,7 +71,7 @@
     }
 }
 
-@media(min-width: 992px) {
+@media(min-width: 990px) {
     .Button {
         margin-top: 37px;
     }
