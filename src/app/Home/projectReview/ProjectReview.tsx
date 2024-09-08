@@ -1,8 +1,8 @@
 import styles from './ProjectReview.module.css';
-import myImage from '../purple potato.png'
+import myImage from '/public/assets/purple potato.png'
 import Link from 'next/link'
 import Image from 'next/image';
-import Technology from './Technology';
+import Technology from '../technology/Technology';
 
 export default function ProjectReview() {
 

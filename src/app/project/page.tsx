@@ -1,5 +1,5 @@
 import styles from './page.module.css';
-import Tag from './skillTag';
+import Tag from './skillTag/SkillTag';
 
 export default function Project() {
     
