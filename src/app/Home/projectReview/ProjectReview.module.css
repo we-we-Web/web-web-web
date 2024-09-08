@@ -1,18 +1,18 @@
-.projectReviewContainer{
+.project-review-container {
     width: 100%;
     height: 100vh;
     margin: 0;
     padding: 0;
 }
 
-.introTitle{
+.intro-title {
     font-size: 30px;
     text-align: center;
     color: #d3a373;
     margin-block: 30px;
 }
 
-.introTitle::after{
+.intro-title::after {
     content: '';
     width: 75%;
     height: 1px;
@@ -22,28 +22,27 @@
     border-bottom: 2px solid #888;
 }
 
-.projectReviewView{
+.project-review-view {
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    
 }
 
 
-.purplePotatoContainer{
+.purple-potato-container {
     width: 60vh;
     height: 50vh;
     display: flex;
     justify-content: center;
 }
 
-.purplePotatoContainer:hover{
+.purple-potato-container:hover {
     opacity: 0.7;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
-.purplePotatoView{  
+.purple-potato-view {
     background-color: white;
     padding: 2vh;
     border-radius: 8px;
@@ -51,20 +50,20 @@
     border:#C4BAB1 5px outset;
 }
 
-.pic{
+.pic {
     width: 55vh;
     height: 22vh;
     border-radius: 12px;
 }
 
-.title{
+.title {
     margin-top: 10px;
     font-size: 30px;
     color:#d3a373;
     text-align: center;
 }
 
-.description{
+.description {
     margin-block: 15px;
     font-size: 2.2rem;
     font-weight: 600;
@@ -74,17 +73,26 @@
 
 @media(max-width: 600px) {
     
-    .title{
+    .title {
         margin-top: 5px;
         font-size: 15px;
         color:#d3a373;
         text-align: center;
     }
     
-    .description{
+    .description {
         margin-bottom: 10px;
         font-size: 1.2rem;
         color: #D3A373;
         text-align: center;
+    }
+
+    .project-review-view {
+        margin-inline: 5vh;
+    }
+
+    .pic {
+        width: 42vh;
+        height: auto;
     }
 }
