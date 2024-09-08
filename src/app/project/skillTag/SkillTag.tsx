@@ -1,4 +1,4 @@
-import styles from './skillTag.module.css';
+import styles from './SkillTag.module.css';
 
 interface TagProps {
     skill: String
