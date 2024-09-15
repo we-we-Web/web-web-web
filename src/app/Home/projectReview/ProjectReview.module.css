@@ -1,7 +1,7 @@
 .project-review-container {
     width: 100%;
-    height: 100vh;
-    margin: 0;
+    height: 100%;
+    margin-bottom: 10vh;
     padding: 0;
 }
 
@@ -31,14 +31,23 @@
 
 
 .purple-potato-container {
-    width: 60vh;
-    height: 60vh;
+    max-width: 60vh;
+    min-height: 60vh;
     display: flex;
     justify-content: center;
     background-color: white;
     padding: 2vh;
     border:#C4BAB1 5px outset;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+
+    @media(max-width: 880px) {
+        min-height: 56vh;
+        width: 48vh;
+    }
+
+    @media(max-width: 600px) {
+        min-height: 46vh;
+    }
 }
 
 .purple-potato-container:hover {
@@ -62,30 +71,48 @@
 
 .title {
     margin-top: 10px;
-    font-size: 30px;
+    font-size: 1.6rem;
     color:#d3a373;
     text-align: center;
 }
 
 .description {
     margin-block: 15px;
-    font-size: 2.2rem;
+    font-size: 1.4rem;
     font-weight: 600;
     color: #D3A373;
     text-align: center;
 }
 
-@media(max-width: 600px) {
+@media (max-width: 980px) or (max-height: 980px) {
+    .title {
+        margin-top: 2vh;
+        font-size: 1.4rem;
+        color: #d3a373;
+        text-align: center;
+    }
+
+    .description {
+        margin-top: 0;
+    }
+
+    .pic {
+        width: 42vh;
+        height: auto;
+    }
+}
+
+@media(max-width: 600px) or (max-height: 600px) {
     
     .title {
-        margin-top: 5px;
-        font-size: 15px;
+        margin-top: 2vh;
+        font-size: 1.2rem;
         color:#d3a373;
         text-align: center;
     }
     
     .description {
-        margin-bottom: 10px;
+        margin-bottom: 2vh;
         font-size: 1.2rem;
         color: #D3A373;
         text-align: center;
