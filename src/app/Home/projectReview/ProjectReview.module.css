@@ -39,6 +39,14 @@
     padding: 2vh;
     border:#C4BAB1 5px outset;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+
+    @media(max-width: 880px) {
+        height: 56vh;
+    }
+
+    @media(max-width: 600px) {
+        height: 52vh;
+    }
 }
 
 .purple-potato-container:hover {
@@ -75,17 +83,30 @@
     text-align: center;
 }
 
-@media(max-width: 600px) {
+@media (max-width: 880px) {
+    .title {
+        margin-top: 2vh;
+        font-size: 1.6rem;
+        color: #d3a373;
+        text-align: center;
+    }
+
+    .description {
+        margin: 2vh;
+    }
+}
+
+@media(max-width: 600px) or (max-height: 900px) {
     
     .title {
-        margin-top: 5px;
-        font-size: 15px;
+        margin-top: 2vh;
+        font-size: 1.2rem;
         color:#d3a373;
         text-align: center;
     }
     
     .description {
-        margin-bottom: 10px;
+        margin-bottom: 2vh;
         font-size: 1.2rem;
         color: #D3A373;
         text-align: center;
