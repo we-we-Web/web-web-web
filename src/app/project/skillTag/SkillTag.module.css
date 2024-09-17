@@ -2,11 +2,26 @@
     display: inline-block;
     padding: 0.6vh 1.2vh;
     margin: 1.5vh 0.6vh;
-    font-size: 0.8rem;
+    font-size: 1.3rem;
     width: auto;
     text-align: center;
     color: #FFFFFF;
     background-color: gray;
     border-radius: 8px;
     opacity: 0.85;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+@media(max-width: 620px){
+    .tag-view {
+        padding: 0.6vh 1.2vh;
+        margin: 1.5vh 0.6vh;
+        font-size: 0.9rem;
+    }
+}
+@media(min-width: 620px) and (max-width: 900px){
+    .tag-view {
+        padding: 0.6vh 1.2vh;
+        margin: 1.5vh 0.6vh;
+        font-size:1rem;
+    }
 }
