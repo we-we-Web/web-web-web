@@ -3,7 +3,7 @@ import Tag from './skillTag/SkillTag';
 import Image from 'next/image';
 
 export default function Project() {
-
+    const colors = ['#B7B7BD', '#D4B8B4', '#ADAAA5', '#CCD2CC', '#C09D9B', '#DBD4C6'];
     const frontendSkills = [
         'React (Vite)',
     ];
@@ -23,10 +23,10 @@ export default function Project() {
                 <h1>海大資工新生直屬抽籤全端系統</h1>
                 <div className={styles['title-skills']}>
                     {frontendSkills.map((skill, index) => (
-                        <Tag key={index} skill={skill} />
+                        <Tag key={index} skill={skill} color={'#DBD4C6'}/>
                     ))}
                     {backendSkills.map((skill, index) => (
-                        <Tag key={index} skill={skill} />
+                        <Tag key={index} skill={skill} color={colors[index]}/>
                     ))}
                 </div>
             </div>
