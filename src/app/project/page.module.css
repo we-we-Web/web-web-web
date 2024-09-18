@@ -60,13 +60,16 @@
     .tech-stack {
         margin: 5vh 10vh;
     }
-}.team-members {
+}
+
+.assign-member-set {
     display: flex;
     justify-content: flex-start;
     gap: 10px; 
     margin-top: 20px;
 }
-.team-members {
+
+.assign-member-set {
     display: flex;
     justify-content: space-around; 
     gap: 20px; 
@@ -74,25 +77,25 @@
     flex-wrap: wrap; 
 }
 
-.team-member {
+.assign-member {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1; 
-    max-width: 200px; 
-    min-width: 150px; 
+    min-width: 20vh;
 }
 
-.team-member img {
+.assign-member img {
     border-radius: 50%;
     margin-bottom: 10px;
+    user-select: none;
 }
 
-.team-member li {
-    margin-left: 5px;
+.assign-member li {
+    margin-left: 1.2vh;
 }
 
-.team-member .whiteboard {
+.assign-member .whiteboard {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -100,4 +103,8 @@
     margin-top: 10px;
     backdrop-filter: blur(10px); 
     color: white;
+}
+
+.whiteboard {
+    border: 2px solid #e0e0e0;
 }

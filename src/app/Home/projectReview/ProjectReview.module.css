@@ -3,13 +3,16 @@
     height: 100%;
     margin-bottom: 10vh;
     padding: 0;
+
+    --title-color: #d3a373;
+    --nice-white: white;
 }
 
 .intro-title {
-    font-size: 30px;
+    font-size: 1.8rem;
     text-align: center;
-    color: #d3a373;
-    margin-block: 30px;
+    color: var(--title-color);
+    margin-block: 1.8rem;
 }
 
 .intro-title::after {
@@ -35,19 +38,10 @@
     min-height: 60vh;
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: var(--nice-white);
     padding: 2vh;
     border:#C4BAB1 5px outset;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
-
-    @media(max-width: 880px) {
-        min-height: 56vh;
-        width: 48vh;
-    }
-
-    @media(max-width: 600px) {
-        min-height: 46vh;
-    }
 }
 
 .purple-potato-container:hover {
@@ -56,7 +50,7 @@
 }
 
 .purple-potato-view {
-    background-color: white;
+    background-color: var(--nice-white);
     padding: 2vh;
     border-radius: 8px;
     text-align: center;
@@ -70,9 +64,9 @@
 }
 
 .title {
-    margin-top: 10px;
+    margin-top: 2rem;
     font-size: 1.6rem;
-    color:#d3a373;
+    color: var(--title-color);
     text-align: center;
 }
 
@@ -80,107 +74,62 @@
     margin-block: 15px;
     font-size: 1.4rem;
     font-weight: 600;
-    color: #D3A373;
+    color: var(--title-color);
     text-align: center;
 }
 
-@media(max-width: 600px) {
-    
+@media (width < 1280px) {
+
     .title {
-        margin-top: 2vh;
+        font-size: 1.4rem;
+    }
+
+    .purple-potato-container {
+        max-width: 56vh;
+    }
+
+    .pic {
+        width: 48vh;
+        height: auto;
+    }
+}
+
+@media (width < 1024px) {
+
+    .title {
         font-size: 1.2rem;
-        color:#d3a373;
-        text-align: center;
     }
-    
-    .description {
-        margin-bottom: 2vh;
-        font-size: 1.2rem;
-        color: #D3A373;
-        text-align: center;
+
+    .purple-potato-container {
+        max-width: 52vh;
+        min-height: 50vh;
     }
-    
-    .project-review-view {
-        margin-inline: 5vh;
-    }
-    
+
     .pic {
         width: 42vh;
-        height: auto;
-    }
-
-    .technology{
-        height: 20px;
-        font-size: 0.7rem;
     }
 }
 
-@media(min-width: 620px) and (max-width: 900px){
-    .purple-potato-container{
-        width: 80vh;
-        height: 70vh;
-    }
-
+@media (width < 880px) {
     .title {
-        margin-top: 2vh;
-        font-size: 1.2rem;
-        color:#d3a373;
-        text-align: center;
-    }
-    
-    .description {
-        margin-bottom: 2vh;
-        font-size: 1.2rem;
-        color: #D3A373;
-        text-align: center;
-    }
-    
-    .project-review-view {
-        margin-inline: 5vh;
-    }
-    
-    .pic {
-        width: 60vh;
-        height: auto;
+        font-size: 1rem;
     }
 
-    .technology{
-        height: 20px;
-        font-size: 0.7rem;
+    .purple-potato-container {
+        max-width: 46vh;
+    }
+
+    .pic {
+        width: 36vh;
     }
 }
 
-@media(min-width:900px) and (max-width: 1440px){
-    .purple-potato-container{
-        width: 80vh;
-        height: 70vh;
+@media (width < 600px) {
+    .purple-potato-container {
+        max-width: 40vh;
     }
 
-    .title {
-        margin-top: 5px;
-        font-size: 20px;
-        color:#d3a373;
-        text-align: center;
-    }
-    
-    .description {
-        margin-bottom: 10px;
-        font-size: 1.8rem;
-        color: #D3A373;
-        text-align: center;
-    }
-    
-    .project-review-view {
-        margin-inline: 5vh;
-    }
-    
     .pic {
-        width: 60vh;
-        height: auto;
-    }
-
-    .technology{
-        height: 20px;
-        font-size: 0.7rem;
+        width: 32vh
     }
 }
