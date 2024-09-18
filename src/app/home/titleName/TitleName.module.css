@@ -1,0 +1,149 @@
+.title {
+    font-family: 'Nico Moji', 'Arial', sans-serif;
+    color: #D3A373;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+}
+
+.jumpTitleAlphabet {
+    margin: 0;
+    user-select: none;
+    cursor: unset;
+    display: inline-block;
+    transform-origin: center bottom;
+}
+
+.subtitle {
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    word-break: break-word;
+    white-space: normal;
+    user-select: none;
+}
+
+.pic {
+    user-select: none;
+}
+
+@media(max-width: 620px) {
+    .title {
+        font-size: 30px;
+        height: 90vh;
+        margin-inline: 30px;
+    }
+    
+    .pic {
+        height: auto;
+        width: 100px;
+        border-radius: 25px;
+        margin-left: 0;
+    }
+    
+    .subtitle {
+        font-size: 9px;
+        margin-top: 25px;
+        max-width: 250px;
+    }
+    
+    .jumpTitleAlphabet {
+        font-size: 22px;
+    }
+}
+
+@media(min-width: 620px) and (max-width: 991px) {
+    .title {
+        font-size: 50px;
+        height: 80vh;
+    }
+    
+    .pic {
+        height: auto;
+        width: 150px;
+        border-radius: 34px;
+        margin-left: 50px;
+    }
+    
+    .subtitle {
+        font-size: 12px;
+        margin-top: 30px;
+    }
+    
+    .jumpTitleAlphabet {
+        font-size: 50px;
+    }
+}
+
+@media(min-width: 990px) {
+    .title {
+        font-size: 75px;
+        height: 90vh;
+    }
+    
+    .pic {
+        height: 220px;
+        width: auto;
+        border-radius: 50px;
+        margin-left: 50px;
+    }
+    
+    .subtitle {
+        font-size: 20px;
+        margin-top: 55px;
+    }
+    
+    .jumpTitleAlphabet {
+        font-size: 75px;
+    }
+}
+
+@media(min-width: 1400px) {
+    .title {
+        font-size: 115px;
+        height: 90vh;
+    }
+    
+    .pic {
+        height: 220px;
+        width: auto;
+        border-radius: 50px;
+        margin-left: 50px;
+    }
+    
+    .subtitle {
+        font-size: 20px;
+        margin-top: 55px;
+    }
+    
+    .jumpTitleAlphabet {
+        font-size: 100px;
+    }
+}
+
+.jumpTitleAlphabet.isActive {
+    animation: jump-letter 1.5s 0s cubic-bezier(0.165, 0.85 , 0.45, 1);
+}
+
+@keyframes jump-letter {
+    0%, 100% {
+        transform: translateY(0) scale(1, 1);
+        color: var(--white);
+    }
+
+    25%, 75% {
+        transform: translateY(0) scale(1.2, 0.8);
+        text-shadow: -5px 5px 5px rgba(0, 0, 0, .5);
+        color: var(--white);
+    }
+
+    50% {
+        transform: translateY(-50px) scale(0.8, 1.2);
+        text-shadow: -50px 50px 20px rgba(0, 0, 0, .5);
+        color: var(--blue);
+    }
+}
+
+@font-face {
+    font-family: 'Nico Moji';
+    src: url('../NicoMoji-Regular.ttf');
+}

@@ -1,0 +1,29 @@
+.technology-container {
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+    margin-top: 3vh;
+    user-select: none;
+}
+
+.technology {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    border-radius: 3px;
+    height: 30px;
+    font-size: 1.3rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 120%;
+    padding: 1.8vh 1vh;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+@media(max-width: 600px) or (max-height: 900px) {
+    .technology{
+        height: 20px;
+        font-size: 0.9rem;
+    }
+}
