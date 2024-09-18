@@ -76,35 +76,3 @@
     margin-top: 20px;
     flex-wrap: wrap; 
 }
-
-.assign-member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1; 
-    min-width: 20vh;
-}
-
-.assign-member img {
-    border-radius: 50%;
-    margin-bottom: 10px;
-    user-select: none;
-}
-
-.assign-member li {
-    margin-left: 1.2vh;
-}
-
-.assign-member .whiteboard {
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;
-    margin-top: 10px;
-    backdrop-filter: blur(10px); 
-    color: white;
-}
-
-.whiteboard {
-    border: 2px solid #e0e0e0;
-}
