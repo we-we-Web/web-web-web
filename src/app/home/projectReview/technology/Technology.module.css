@@ -17,12 +17,13 @@
     text-overflow: ellipsis;
     line-height: 120%;
     padding: 1.8vh 1vh;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     color: white;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 600px) or (max-height: 900px) {
     .technology{
         height: 20px;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 }

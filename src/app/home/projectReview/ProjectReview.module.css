@@ -1,0 +1,135 @@
+.project-review-container {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10vh;
+    padding: 0;
+
+    --title-color: #d3a373;
+    --nice-white: white;
+}
+
+.intro-title {
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--title-color);
+    margin-block: 1.8rem;
+}
+
+.intro-title::after {
+    content: '';
+    width: 75%;
+    height: 1px;
+    display: block;
+    margin: auto;
+    padding: 1px;
+    border-bottom: 2px solid #888;
+}
+
+.project-review-view {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.purple-potato-container {
+    max-width: 60vh;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--nice-white);
+    padding: 2vh;
+    border:#C4BAB1 5px outset;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.purple-potato-container:hover {
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+
+.purple-potato-view {
+    background-color: var(--nice-white);
+    padding: 2vh;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.pic {
+    width: 55vh;
+    height: 22vh;
+    border-radius: 12px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    color: var(--title-color);
+    text-align: center;
+}
+
+.description {
+    margin-block: 15px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--title-color);
+    text-align: center;
+}
+
+@media (width < 1280px) {
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .purple-potato-container {
+        max-width: 56vh;
+    }
+
+    .pic {
+        width: 48vh;
+        height: auto;
+    }
+}
+
+@media (width < 1024px) {
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .purple-potato-container {
+        max-width: 52vh;
+        min-height: 50vh;
+    }
+
+    .pic {
+        width: 42vh;
+    }
+}
+
+@media (width < 880px) {
+    .title {
+        font-size: 1rem;
+    }
+
+    .purple-potato-container {
+        max-width: 46vh;
+    }
+
+    .pic {
+        width: 36vh;
+    }
+}
+
+@media (width < 600px) {
+    .purple-potato-container {
+        max-width: 40vh;
+    }
+
+    .pic {
+        width: 32vh
+    }
+}
