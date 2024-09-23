@@ -76,3 +76,10 @@
     margin-top: 20px;
     flex-wrap: wrap; 
 }
+
+.git-model {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    margin: 1.5vh;
+}

@@ -1,6 +1,7 @@
 import styles from './page.module.css';
 import Tag from './skillTag/SkillTag';
 import AssignMember from './assignMember/AssignMember';
+import { GitGraph } from './gitGraph/GitGraph';
 
 export default function Project() {
     const colors = ['#B7B7BD', '#D4B8B4', '#ADAAA5', '#CCD2CC', '#C09D9B', '#DBD4C6'];
@@ -82,6 +83,8 @@ export default function Project() {
                     ))}
                 </div>
             </div>
+            <h2 className={styles['git-model']}><b>開發流程 Development Process</b></h2>
+            <GitGraph />
         </div>
     );
 }
