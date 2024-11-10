@@ -51,6 +51,13 @@ const members = [
         link: 'https://cjc094.github.io/',
         alt: '陳婕熙',
         location: 'Taiwan'
+    },
+    {
+        name: '謝誌評',
+        imageUrl: 'https://github.com/olalbertlo.png',
+        link: 'https://olalbertlo.github.io/',
+        alt: '謝誌評',
+        location: 'Taiwan'
     }
 ];
 
